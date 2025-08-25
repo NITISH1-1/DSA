@@ -36,3 +36,13 @@ public:
         return result;
     }
 };
+
+
+
+// 2Sum → while(l < r)
+
+// 3Sum → for i + while(l < r)
+
+// 4Sum → for i + for j + while(l < r)
+
+// kSum → recursion on the same idea.
