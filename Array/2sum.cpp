@@ -1,3 +1,4 @@
+#include <vector>
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
@@ -17,22 +18,5 @@ public:
                 break; // found
             }
         }
-
-        vector<int> res;
-        int ll = -1, rr = -1;
-
-        for (int i = 0; i < copyNums.size(); i++) {
-            if (copyNums[i] == nums[l] && i != rr) {
-                res.push_back(i);
-                ll = i;
-            }
-            else if (copyNums[i] == nums[r] && i != ll) {
-                res.push_back(i);
-                rr = i;
-            }
-            if (res.size() == 2) break;
-        }
-
-        return res;
     }
 };
